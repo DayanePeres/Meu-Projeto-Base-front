@@ -1,0 +1,10 @@
+# Ignorar dependências do Node.js
+node_modules/
+public/tailwind.css
+package-lock.json
+
+# Ignorar arquivos do sistema
+.DS_Store
+
+# Ignorar diretórios de build (caso tenha no futuro)
+dist/

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="../public/tailwind.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 bg-opacity-90 backdrop-blur-lg fixed w-full top-0 shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center px-6 py-4">
+            <h1 class="text-2xl font-bold text-blue-400">Meu Portfólio</h1>
+    
+            <!-- Botão do menu mobile (aparece apenas em telas menores) -->
+            <button id="menu-btn" class="md:hidden text-white text-2xl">
+                ☰
+            </button>
+        </div>
+    
+        <!-- Menu de navegação -->
+        <ul id="menu" class="hidden md:flex md:flex-row flex-col gap-6 text-center bg-gray-800 md:bg-transparent py-4 md:py-0">
+            <li><a href="#home" class="hover:text-blue-400 block p-3 transition">Home</a></li>
+            <li><a href="#sobre" class="hover:text-blue-400 block p-3 transition">Sobre</a></li>
+            <li><a href="#projetos" class="hover:text-blue-400 block p-3 transition">Projetos</a></li>
+            <li><a href="#contato" class="hover:text-blue-400 block p-3 transition">Contato</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Home -->
+<section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-5xl md:text-6xl font-bold text-blue-400">Bem-vindo!</h2>
+    <p class="text-gray-300 mt-4 text-lg md:text-xl max-w-xl leading-relaxed">
+        Sou uma desenvolvedora apaixonada por tecnologia e boas práticas de código.
+    </p>
+</section>
+
+<!-- Sobre Mim -->
+<!-- Sobre Mim -->
+<section id="sobre" class="min-h-screen flex flex-col justify-center items-center text-center bg-gray-800 px-6">
+    <h2 class="text-4xl md:text-5xl font-bold text-white">Sobre Mim</h2>
+    <img src="./assets/images/Dani.jpeg" alt="Minha Foto" class="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-lg mt-6">
+    <p class="text-gray-300 mt-4 max-w-2xl leading-relaxed text-base md:text-lg">
+        Sou uma engenheira de software com experiência em desenvolvimento backend e frontend.
+        Apaixonada por boas práticas, performance e código limpo.
+    </p>
+</section>
+
+
+<!-- Projetos -->
+<section id="projetos" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-4xl md:text-5xl font-bold text-blue-400">Meus Projetos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 max-w-5xl w-full">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition">
+            <h3 class="text-xl font-bold">Projeto 1</h3>
+            <p class="text-gray-300 mt-2">Descrição breve do projeto.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition">
+            <h3 class="text-xl font-bold">Projeto 2</h3>
+            <p class="text-gray-300 mt-2">Descrição breve do projeto.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contato -->
+    <section id="contato" class="min-h-screen flex flex-col justify-center items-center text-center bg-gray-800 px-6">
+        <h2 class="text-4xl md:text-5xl font-bold text-white">Entre em Contato</h2>
+        <p class="text-gray-300 mt-4 text-lg">Me envie uma mensagem!</p>
+        <form action="https://formsubmit.co/seuemail@email.com" method="POST" class="mt-6 max-w-md w-full space-y-3">
+            <input type="text" name="name" placeholder="Seu Nome" required class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-blue-400">
+            <input type="email" name="email" placeholder="Seu E-mail" required class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-blue-400">
+            <textarea name="message" placeholder="Sua Mensagem" required class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-blue-400"></textarea>
+            <button type="submit" class="w-full bg-blue-500 p-3 rounded text-white font-bold hover:bg-blue-700 transition">
+                Enviar
+            </button>
+        </form>
+    </section>
+    
+
+    <!-- JavaScript -->
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
